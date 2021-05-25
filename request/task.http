@@ -1,0 +1,33 @@
+###One task #######
+GET http://localhost:3000/api/task/60ad0918b057d41fcc84f3f
+
+
+### ALL TASKS #######
+GET http://localhost:3000/api/task
+
+### POST #######
+POST  http://localhost:3000/api/task
+Content-Type: application/json
+
+{
+    "title":"Tarea 3000",
+    "description":"Reto 1 misionTic",
+    "done":false
+}
+
+###Delete one task #######
+
+DELETE http://localhost:3000/api/task/60ad0d06f7f86e2680132d0e
+
+###### DONE #######
+GET http://localhost:3000/api/task/done
+
+
+###UPDATE##
+
+PUT http://localhost:3000/api/task/60ad0918b057d41fcc84f3f9
+Content-Type: application/json
+
+{
+    "done" : false
+}
